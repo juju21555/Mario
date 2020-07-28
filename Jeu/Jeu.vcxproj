@@ -152,6 +152,7 @@
     <ClCompile Include="BouleDeFeu.cpp" />
     <ClCompile Include="Corps.cpp" />
     <ClCompile Include="Corps8.cpp" />
+    <ClCompile Include="CorpsRepetition.cpp" />
     <ClCompile Include="Couple.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="BouleDeFeu.h" />
     <ClInclude Include="Corps.h" />
     <ClInclude Include="Corps8.h" />
+    <ClInclude Include="CorpsRepetition.h" />
     <ClInclude Include="Couple.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Personnage.h" />

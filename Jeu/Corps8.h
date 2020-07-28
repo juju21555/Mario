@@ -1,9 +1,8 @@
 #pragma once
-#include <string>
 #include <Couple.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "properties.h"
+#include <properties.h>
 
 class Corps8
 {

@@ -1,5 +1,4 @@
-#include "Corps8.h"
-#include "iostream"
+#include <Corps8.h>
 
 
 Corps8::Corps8(std::string s, Couple pos)

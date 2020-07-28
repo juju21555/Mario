@@ -4,10 +4,10 @@
 #include <CorpsSprite.h>
 #include <Camera.h>
 #include <Monde.h>*/
-
-#include <Game.h>
+#include <properties.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <Game.h>
 
 using namespace std;
 
@@ -63,7 +63,7 @@ int main(int argc, char* argcv[])
 
 		Breakout.Update(deltaTime);
 
-		glClearColor(0.57f, 0.30f, 0.16f, 1.0f);
+		glClearColor(0.51f, 0.78f, 0.92f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		Breakout.Render();

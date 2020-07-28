@@ -1,6 +1,4 @@
-#include "Couple.h"
-#include "iostream"
-#include "string"
+#include <Couple.h>
 
 
 Couple::Couple(double x, double y)

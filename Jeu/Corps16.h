@@ -1,5 +1,7 @@
 #pragma once
+#include <properties.h>
 #include <Corps8.h>
+#include <Couple.h>
 
 class Corps16
 {

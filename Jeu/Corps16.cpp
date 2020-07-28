@@ -1,5 +1,4 @@
-#include "Corps16.h"
-#include "iostream"
+#include <Corps16.h>
 
 
 
@@ -74,7 +73,7 @@ void Corps16::impulse(double x, double y) {
 void Corps16::lancerBDF()
 {
 	Corps8 bdf("bdf", this->pos);
-	bdf.setSprite(bdf_sprite_2);
+	bdf.setSprite(bdf_sprite_1);
 	bdf.impulse(this->imp.x + 80, this->imp.y + 40);
 	this->items[(this->idx_item++)%MAX_FIREBALLS] = bdf;
 	this->time_fireball = 0;

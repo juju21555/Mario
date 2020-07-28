@@ -1,6 +1,6 @@
-#include "Corps.h"
+#include <Corps.h>
 
-Corps::Corps(std::string s, Couple pos, Couple dim)
+Corps::Corps(std::string s, Couple pos, iCouple dim)
 {
 	this->name = s;
 	this->pos = pos;

@@ -1,9 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <properties.h>
+#include <Personnage.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <Personnage.h>
 
 enum GameState {
     GAME_ACTIVE,
@@ -15,7 +16,7 @@ class Game
 {
 public:
     GameState               State;
-    Personnage              Perso;
+    Personnage              Perso, Mechant;
     bool                    Keys[1024];
     unsigned int            Width, Height;
     Game(unsigned int width, unsigned int height);

@@ -1,22 +1,27 @@
 #pragma once
-#include "BouleDeFeu.h"
-#include "Corps.h"
+#include <properties.h>
+#include <Corps.h>
+#include <Couple.h>
+#include <BouleDeFeu.h>
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 class Personnage :
     public Corps
 {
 public:
-	Personnage() : Personnage("noname", Couple()) {};
-	Personnage(std::string s, Couple pos);
+	Personnage() : Personnage("noname", Couple(), None) {};
+	Personnage(std::string s, Couple pos, Sprite sp);
 
-	void update();
+	void update(CorpsRepetition CORs[16]);
+	void update(BouleDeFeu BDFs[16]);
 	void draw();
-	void lancerBDF();
+	BouleDeFeu lancerBDF();
+	void deplacementAuto();
 
-
-	bool isJumping;
+	char infos;
 	std::string name;
-	int idx_item, time_fireball;
-	BouleDeFeu items[MAX_FIREBALLS];
+	Sprite sprite;
+	int idx_item, timer;
 };
-
